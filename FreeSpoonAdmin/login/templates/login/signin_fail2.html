@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>FreeSpoonAdmin</title>
+</head>
+<body>
+	<form action="/login/signin/fail/" method="post">
+		{% csrf_token %}
+        <p>Sorry, the username and password didn't match. Please click the button below to the login page.</p>
+		<a href="http://192.168.102.9:8000/login/signin/"><button type="button">OK</button></a>
+	</form>
+</body>
+</html>
